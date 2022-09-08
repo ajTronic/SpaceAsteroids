@@ -1,0 +1,17 @@
+{
+    "asteroid": {
+        "speed": 0.8,
+        "minRad": 17,
+        "maxRad": 30
+    },
+    "ship": {
+        "rad": 20,
+        "speed": 1.2,
+        "slowdown": 0.95,
+        "handling": 0.1
+    },
+    "torpedo": {
+        "speed": 10,
+        "rad": 5
+    }
+}
