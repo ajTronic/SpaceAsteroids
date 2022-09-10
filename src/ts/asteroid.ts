@@ -1,6 +1,6 @@
 import P5 from "p5";
 import GameObject from "./gameobject"
-import controler from "./controls/controler.json" assert {type: "json"}
+import controler from "../controls/controler.json" assert {type: "json"}
 
 class Asteroid extends GameObject {
     total: number

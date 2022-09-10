@@ -2,7 +2,7 @@ import P5, { Vector } from "p5";
 import "p5/lib/addons/p5.dom";
 import Asteroid from "./asteroid";
 import Ship from "./ship";
-import controler from "./controls/controler.json" assert {type: "json"}
+import controler from "../controls/controler.json" assert {type: "json"}
 import Torpedo from "./torpedo";
 
 let ship: Ship;

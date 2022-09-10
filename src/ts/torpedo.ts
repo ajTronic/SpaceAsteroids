@@ -1,5 +1,5 @@
 import GameObject from "./gameobject"
-import controler from "./controls/controler.json" assert {type: "json"}
+import controler from "../controls/controler.json" assert {type: "json"}
 import P5 from "p5"
 
 class Torpedo extends GameObject {
