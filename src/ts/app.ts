@@ -4,10 +4,12 @@ import Asteroid from "./asteroid";
 import Ship from "./ship";
 import controler from "../controls/controler.json" assert {type: "json"}
 import Torpedo from "./torpedo";
+import SoundManager from "./soundManager"
 
 let ship: Ship;
 let asteroids: Asteroid[] = []
 let torpedos: Torpedo[] = []
+let sm: SoundManager
 
 const breakupAsteroid = (asteroid: Asteroid) => {
     if (asteroid.rad > 15) {
@@ -19,7 +21,9 @@ const breakupAsteroid = (asteroid: Asteroid) => {
 const sketch = (game: P5) => {
     game.setup = () => {
         game.createCanvas(game.windowWidth, game.windowHeight);
+
         ship = new Ship(game)
+        sm = new SoundManager(game)
 
         for (let i = 0; i < 10; i++) {
             asteroids.push(new Asteroid(
@@ -42,6 +46,7 @@ const sketch = (game: P5) => {
 
     game.keyTyped = () => {
         if (game.key == " ") {
+            sm.playShotSound()
             torpedos.push(new Torpedo(game, ship.getData()[0], ship.getData()[1]))
         }
     }
