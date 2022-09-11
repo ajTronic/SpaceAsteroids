@@ -1,7 +1,7 @@
-declare var background: string | number
-declare var asteroidFill: string | number
-declare var asteroidStroke: string | number
-declare var shipFill: string | number
-declare var shipStroke: string | number
-declare var torpedoFill: string | number
-declare var torpedoStroke: string | number
+declare var background: string
+declare var asteroidFill: string
+declare var asteroidStroke: string
+declare var shipFill: string
+declare var shipStroke: string
+declare var torpedoFill: string
+declare var torpedoStroke: string

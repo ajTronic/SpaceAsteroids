@@ -18,7 +18,7 @@ let asteroids: Asteroid[] = []
 let torpedos: Torpedo[] = []
 let sm: SoundManager
 
-globalThis.background = 255
+globalThis.background = "white"
 globalThis.asteroidFill = "#7209b7"
 globalThis.asteroidStroke = "#3a0ca3"
 globalThis.shipFill = "#7209b7"
