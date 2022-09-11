@@ -33,8 +33,8 @@ class Asteroid extends GameObject {
 
     render() {
         this.game.push()
-        this.game.stroke(255)
-        this.game.fill(10)
+        this.game.stroke(globalThis.asteroidStroke)
+        this.game.fill(globalThis.asteroidFill)
         this.game.translate(this.pos.x, this.pos.y)
         this.game.beginShape()
         for (let i = 0; i < this.total; i++) {

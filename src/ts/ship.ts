@@ -46,8 +46,9 @@ class Ship extends GameObject {
         this.game.push()
         this.game.translate(this.pos.x, this.pos.y)
         this.game.rotate(this.heading + this.game.PI / 2)
-        this.game.fill(20)
-        this.game.stroke(255)
+        this.game.fill(globalThis.shipFill)
+        this.game.strokeWeight(3)
+        this.game.stroke(globalThis.shipStroke)
         this.game.triangle(
             -this.rad, this.rad,
             this.rad, this.rad,

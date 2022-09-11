@@ -24,7 +24,7 @@ class Torpedo extends GameObject {
 
     render() {
         this.game.push()
-          this.game.stroke("white")
+          this.game.stroke(globalThis.torpedoStroke)
           this.game.strokeWeight(this.rad)
           this.game.point(this.pos.x, this.pos.y)
         this.game.pop()

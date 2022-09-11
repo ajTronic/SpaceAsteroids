@@ -1,3 +1,10 @@
+// color pallete: 
+// 8ecae6
+// 219ebc
+// 023047
+// ffb703
+// fb8500
+
 import P5, { Vector } from "p5";
 import "p5/lib/addons/p5.dom";
 import Asteroid from "./asteroid";
@@ -10,6 +17,15 @@ let ship: Ship;
 let asteroids: Asteroid[] = []
 let torpedos: Torpedo[] = []
 let sm: SoundManager
+
+globalThis.background = 10
+globalThis.asteroidFill = "#7209b7"
+globalThis.asteroidStroke = "#3a0ca3"
+globalThis.shipFill = "#4361ee"
+globalThis.shipStroke = "#3a0ca3"
+globalThis.torpedoFill = "#7209b7"
+globalThis.torpedoStroke = "#3a0ca3"
+
 
 const breakupAsteroid = (asteroid: Asteroid) => {
     if (asteroid.rad > 15) {
@@ -58,7 +74,7 @@ const sketch = (game: P5) => {
     }
 
     game.draw = () => {
-        game.background(20);
+        game.background(globalThis.background);
 
         for (let i = torpedos.length - 1; i >= 0; i--) {
             const torpedo = torpedos[i]
