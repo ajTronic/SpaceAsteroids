@@ -26,7 +26,6 @@ globalThis.shipStroke = "#fb8500"
 globalThis.torpedoFill = "#fb8500"
 globalThis.torpedoStroke = "#ffb703"
 
-
 const breakupAsteroid = (asteroid: Asteroid) => {
     if (asteroid.rad > 15) {
         const newAsteroids = asteroid.breakup()
@@ -36,7 +35,7 @@ const breakupAsteroid = (asteroid: Asteroid) => {
 
 const sketch = (game: P5) => {
     game.setup = () => {
-        game.createCanvas(game.windowWidth, game.windowHeight);
+        game.createCanvas(game.windowWidth, game.windowHeight)
 
         ship = new Ship(game)
         sm = new SoundManager(game)
