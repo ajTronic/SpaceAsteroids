@@ -18,13 +18,13 @@ let asteroids: Asteroid[] = []
 let torpedos: Torpedo[] = []
 let sm: SoundManager
 
-globalThis.background = "white"
-globalThis.asteroidFill = "#7209b7"
-globalThis.asteroidStroke = "#3a0ca3"
-globalThis.shipFill = "#7209b7"
-globalThis.shipStroke = "#3a0ca3"
-globalThis.torpedoFill = "#7209b7"
-globalThis.torpedoStroke = "#f72585"
+globalThis.background = "black"
+globalThis.asteroidFill = "black"
+globalThis.asteroidStroke = "#5612c4"
+globalThis.shipFill = "black"
+globalThis.shipStroke = "#fb8500"
+globalThis.torpedoFill = "#fb8500"
+globalThis.torpedoStroke = "#ffb703"
 
 
 const breakupAsteroid = (asteroid: Asteroid) => {

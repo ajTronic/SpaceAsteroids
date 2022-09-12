@@ -8,7 +8,7 @@ class SoundManager {
     }
 
     async playShotSound() {
-        let soundUrl = require("url:../assets/shot.wav")
+        let soundUrl: string = require("url:../assets/shot.wav")
         let sound = new Audio(soundUrl)
         sound.load()
         await sound.play()
